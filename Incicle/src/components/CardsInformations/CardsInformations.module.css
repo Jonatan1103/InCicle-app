@@ -1,0 +1,30 @@
+.container {
+  display:flex;
+  width:100%;
+  background-color:#F2F3F5;
+}
+
+.gridCardItems {
+  margin-top:35px;
+  padding:0 80px;
+  display:grid;
+  grid-template-columns:2fr 1fr;
+  gap:30px;
+}
+
+.header {
+  background-color:#FFF2DE;
+  display:flex;
+  justify-content:space-between;
+}
+
+.header button {
+}
+
+.cardItemSecundary {
+  background-color:#FFF2DE;
+}
+
+.cardItemSecundary p {
+  padding:0 22px;
+}
