@@ -2,6 +2,7 @@ import styles from './CardsInformations.module.css'
 
 import poligono from '../../../assets/Polígono.png' 
 import elipse from '../../../assets/Elipse.png'
+import mundo from '../../../assets/mundo.png'
 
 import { data } from '../../data.json'
 
@@ -43,7 +44,7 @@ const CardsInformations = () => {
                     </div>
                   </div>
 
-                  <span className={styles.deleteItem}>
+                  <span className={styles.infoItem}>
                     <img src={elipse} />
                     <img src={elipse} />
                     <img src={elipse} />
@@ -74,7 +75,32 @@ const CardsInformations = () => {
 
           <div className={styles.cardManagement}>
             <h2>Quadros de Gestão à Vista</h2>
+            <ul>
+              <li className={styles.statement}>
+                <div className={styles.containerStatement}>
+                  <h4 className={styles.title}>demonstrativo</h4>
 
+                  <div className={styles.infoStatement}>
+                    
+                    <div className={styles.world}>
+                      <img src={mundo} alt="imagem mundo" />
+                    </div>
+                    
+
+                    <div className={styles.info}>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                    </div>
+                  </div>
+                  
+                </div>
+
+
+                
+
+              </li>
+            </ul>
           </div>
 
         </section>

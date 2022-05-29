@@ -125,7 +125,7 @@
   color: #707070;
 }
 
-.deleteItem {
+.infoItem {
   display:flex;
   justify-content:center;
   align-items:center;
@@ -181,13 +181,75 @@
   transition: all 0.5s;
 }
 
-.cardManagement h2 {
+.cardManagement {
   padding:12px 8px;
   background-color:#FDFDFD;
-  color:#707070;
-  font-size:16px;
-  font-weight:700;
   border-radius:5px;
   box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.1),
     -1px 1px 5px 0px rgba(0,0,0,0.1);
+}
+
+.cardManagement ul {
+  list-style-type: none;
+  padding:0;
+}
+
+.cardManagement h2 {
+  font-weight: 700;
+  font-size: 16px;
+  color: #707070;
+}
+
+.statement {
+  background: rgba(52, 137, 177, 0.1);
+}
+
+.statement .title {
+  font-weight: 400;
+  font-size: 13px;
+  color: #707070;
+}
+
+.containerStatement {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.infoStatement {
+  display:flex;
+}
+
+.world {
+  width: 16px;
+  height: 16px;
+  border-radius:50%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background-color:#fff;
+}
+
+.world img {
+  width: 11px;
+  height: 11px;
+}
+
+.info {
+  width: 16px;
+  height: 16px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background-color:#fff;
+  border-radius:50%;
+}
+
+.info div {
+  display:inline-flex;
+  margin-left:1px;
+  width: 3px;
+  height: 3px;
+  border-radius:50%;
+  background: #707070;
 }
