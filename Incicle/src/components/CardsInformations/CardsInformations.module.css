@@ -74,16 +74,15 @@
 }
 
 .listCard {
-  padding:11px;
-  border-radius:5px;
-  box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.1),
-    -1px 1px 5px 0px rgba(0,0,0,0.1);
   display:flex;
-  list-style-type: none;
+  padding:11px;
+  margin-bottom:10px;
   justify-content:space-between;
   align-items:center;
-  margin-bottom:10px;
   background-color:#FDFDFD;
+  list-style-type: none;
+  box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.1),
+  -1px 1px 5px 0px rgba(0,0,0,0.1);
 }
 
 .imageCard {
