@@ -1,19 +1,14 @@
 import styles from './CardsInformations.module.css'
+
 import poligono from '../../../assets/Polígono.png' 
 import elipse from '../../../assets/Elipse.png'
 
-import { useState } from 'react'
+import { data } from '../../data.json'
 
 const CardsInformations = () => {
+  const itemsList = [...data]
 
-  const [listCard, setListCard] = useState([])
-
-  fetch('../../../data.json')
-    .then(response => response.json())
-    .then( data  => setListCard(data))
-
-
-
+  console.log(itemsList[1])
   return (
     <div className={styles.container}>
       <div className={styles.gridCardItems}>
@@ -29,31 +24,34 @@ const CardsInformations = () => {
           </div>
 
           <ul className={styles.list}>
+            {
+              itemsList.map( items => (
+                <li key={items.id} className={styles.listCard}>
 
-            <li className={styles.listCard}>
+                  <div className={styles.imageCard}>
+                    <img src={items.file.url} alt="capa do card" />
+                    <div className={styles.informationCard}>
 
-              <div className={styles.imageCard}>
-                <img src='' alt="capa do card" />
-                <div className={styles.informationCard}>
+                      <h3>{items.title}</h3>
+                      <div>
+                        <span className={styles.event}>{items.type}</span>
+                        <span className={styles.data}>{items.info.date}</span>
+                      </div>
 
-                  <h3>Geral dispensado para curtir o feriado</h3>
-                  <div>
-                    <span className={styles.event}>Comunicado</span>
-                    <span className={styles.data}>13 DE OUT</span>
+                      <p>{items.description}</p>
+
+                    </div>
                   </div>
 
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas a repudiandae ab veritatis similique...</p>
+                  <span className={styles.deleteItem}>
+                    <img src={elipse} />
+                    <img src={elipse} />
+                    <img src={elipse} />
+                  </span>
 
-                </div>
-              </div>
-
-              <span className={styles.deleteItem}>
-                <img src={elipse}/>
-                <img src={elipse}/>
-                <img src={elipse}/>
-              </span>
-
-            </li>
+                </li>
+              ))
+            }
           </ul>
         </section>
 
@@ -71,7 +69,7 @@ const CardsInformations = () => {
               Endomarketing mesmo sendo
               conceitos diferentes.
             </p>
-            <button>DISPENSAR</button>
+            <button className={styles.btnEndomarketing}>DISPENSAR</button>
           </div>
 
           <div className={styles.cardManagement}>

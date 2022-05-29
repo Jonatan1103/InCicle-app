@@ -24,7 +24,7 @@
   font-weight:300;
   font-size:35px;
   color:#707070;
-  margin-bottom:0;
+  margin-bottom:6px;
 }
 
 .buttons {
@@ -48,26 +48,42 @@
   background-color:#fff;
   border: 1px solid #B4B4B4;
   color:#707070;
+  transition: background-color .5s;
+}
+
+.buttonType:hover {
+  border:none;
+  background-color:#3489B1;
+  color:#fff;
 }
 
 .buttonCreate {
   background-color:#3489B1;
   color:#fff;
+  transition:background-color .5s;
+}
+
+.buttonCreate:hover {
+  border: 1px solid #B4B4B4;
+  background-color:#fff;
+  color:#707070;
 }
 
 .list {
-  padding:11px;
-  background-color:#FDFDFD;
-  border-radius:5px;
-  box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.1),
-    -1px 1px 5px 0px rgba(0,0,0,0.1);
+  padding:0;
 }
 
 .listCard {
+  padding:11px;
+  border-radius:5px;
+  box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.1),
+    -1px 1px 5px 0px rgba(0,0,0,0.1);
   display:flex;
   list-style-type: none;
   justify-content:space-between;
   align-items:center;
+  margin-bottom:10px;
+  background-color:#FDFDFD;
 }
 
 .imageCard {
@@ -159,6 +175,11 @@
   border-radius:5px;
   background-color:#FFF2DE;
   cursor:pointer;
+}
+
+.cardItemSecundary button:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
 }
 
 .cardManagement h2 {
