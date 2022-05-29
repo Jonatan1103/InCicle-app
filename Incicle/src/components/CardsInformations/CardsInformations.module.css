@@ -1,30 +1,86 @@
 .container {
-  display:flex;
   width:100%;
   background-color:#F2F3F5;
 }
 
 .gridCardItems {
-  margin-top:35px;
   padding:0 80px;
   display:grid;
-  grid-template-columns:2fr 1fr;
+  grid-template-columns:3fr 1fr;
   gap:30px;
 }
 
 .header {
-  background-color:#FFF2DE;
+  margin-top:34px;
   display:flex;
   justify-content:space-between;
 }
+.header h1 {
+  font-weight:300;
+  font-size:35px;
+  color:#707070;
+  margin-bottom:0;
+}
 
-.header button {
+.buttons {
+  display:flex;
+}
+
+.buttonType, .buttonCrate {
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  font-size:14px;
+  font-weight:700;
+  margin-left:8.5px;
+  border-radius:3px;
+  width:95px;
+  height:38px;
+  cursor:pointer;
+}
+
+.buttonType{
+  background-color:#fff;
+  border: 1px solid #B4B4B4;
+  color:#707070;
+}
+
+.buttonCrate {
+  background-color:#3489B1;
+  color:#fff;
 }
 
 .cardItemSecundary {
+  margin-top:34px;
   background-color:#FFF2DE;
+  border: 1px solid #DCD1C0;
+  width: 278px;
+  height: 348px;
+}
+.cardEndomarketing {
+  padding:30px 21px;
+}
+
+.cardEndomarketing h2 {
+  color:#707070;
+  font-size:16px;
+  font-weight:700;
+  margin-bottom:12px;
+
 }
 
 .cardItemSecundary p {
-  padding:0 22px;
+  color:#707070;
+  font-size:14px;
+}
+.cardItemSecundary button {
+  color:#707070;
+  margin-top:28px;
+  font-weight:700;
+  font-size:13px;
+  padding:10px 20px;
+  border: 1px solid #707070;
+  border-radius:5px;
+  background-color:#FFF2DE;
+  cursor:pointer;
 }
