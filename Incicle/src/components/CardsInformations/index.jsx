@@ -1,5 +1,7 @@
 import styles from './CardsInformations.module.css'
 import poligono from '../../../assets/Polígono.png' 
+import elipse from '../../../assets/Elipse.png'
+
 import { useState } from 'react'
 
 const CardsInformations = () => {
@@ -27,6 +29,7 @@ const CardsInformations = () => {
           </div>
 
           <ul className={styles.list}>
+
             <li className={styles.listCard}>
 
               <div className={styles.imageCard}>
@@ -36,7 +39,7 @@ const CardsInformations = () => {
                   <h3>Geral dispensado para curtir o feriado</h3>
                   <div>
                     <span className={styles.event}>Comunicado</span>
-                    <span className={styles.data}>13 de out</span>
+                    <span className={styles.data}>13 DE OUT</span>
                   </div>
 
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas a repudiandae ab veritatis similique...</p>
@@ -44,7 +47,11 @@ const CardsInformations = () => {
                 </div>
               </div>
 
-              <span>...</span>
+              <span className={styles.deleteItem}>
+                <img src={elipse}/>
+                <img src={elipse}/>
+                <img src={elipse}/>
+              </span>
 
             </li>
           </ul>
