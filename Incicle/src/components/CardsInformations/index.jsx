@@ -12,13 +12,15 @@ const CardsInformations = () => {
 
             <div className={styles.buttons}>
               <div className={styles.buttonType}>TIPO <img src={poligono}/></div>
-              <div className={styles.buttonCrate}>CRIAR <span>+</span></div>
+              <div className={styles.buttonCreate}>CRIAR <span>+</span></div>
             </div>
           </div>
 
           <ul className={styles.list}>
             <li>
-
+              <div className={styles.informationCard}>
+                <img src='https://google' alt="" />
+              </div>
             </li>
           </ul>
         </section>
@@ -36,6 +38,11 @@ const CardsInformations = () => {
               Endomarketing mesmo sendo
               conceitos diferentes.</p>
             <button>DISPENSAR</button>
+          </div>
+
+          <div className={styles.cardManagement}>
+            <h2>Quadros de Gestão à Vista</h2>
+
           </div>
 
         </section>

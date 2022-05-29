@@ -26,7 +26,7 @@
   display:flex;
 }
 
-.buttonType, .buttonCrate {
+.buttonType, .buttonCreate {
   display:flex;
   justify-content:space-around;
   align-items:center;
@@ -45,20 +45,28 @@
   color:#707070;
 }
 
-.buttonCrate {
+.buttonCreate {
   background-color:#3489B1;
   color:#fff;
 }
 
 .cardItemSecundary {
+  display:flex;
+  flex-direction: column;
   margin-top:34px;
-  background-color:#FFF2DE;
+}
+
+.cardItemSecundary p {
+  color:#707070;
+  font-size:14px;
+}
+
+.cardEndomarketing {
   border: 1px solid #DCD1C0;
   width: 278px;
-  height: 348px;
-}
-.cardEndomarketing {
+  height: 268px;
   padding:30px 21px;
+  background-color:#FFF2DE;
 }
 
 .cardEndomarketing h2 {
@@ -66,13 +74,8 @@
   font-size:16px;
   font-weight:700;
   margin-bottom:12px;
-
 }
 
-.cardItemSecundary p {
-  color:#707070;
-  font-size:14px;
-}
 .cardItemSecundary button {
   color:#707070;
   margin-top:28px;
@@ -83,4 +86,15 @@
   border-radius:5px;
   background-color:#FFF2DE;
   cursor:pointer;
+}
+
+.cardManagement h2 {
+  padding:12px 8px;
+  background-color:#FDFDFD;
+  color:#707070;
+  font-size:16px;
+  font-weight:700;
+  border-radius:5px;
+  box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.1),
+    -1px 1px 5px 0px rgba(0,0,0,0.1);
 }
