@@ -47,11 +47,11 @@ const CardsInformations = () => {
                     </div>
                   </div>
 
-                  <span className={styles.infoItem}>
-                    <img src={elipse} />
-                    <img src={elipse} />
-                    <img src={elipse} />
-                  </span>
+                  <div className={styles.info}>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
 
                 </li>
               ))

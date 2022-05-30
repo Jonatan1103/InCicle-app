@@ -1,11 +1,12 @@
 .container {
+  background-color:#fff;
   display:flex;
   width:100%;
   box-shadow:0 0 4px rgba(0, 0, 0, 0.1);
 }
 
 .main {
-  background-color:#fff;
+
   padding:10px 0;
 }
 
