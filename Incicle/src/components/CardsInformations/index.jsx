@@ -5,11 +5,14 @@ import elipse from '../../../assets/Elipse.png'
 import mundo from '../../../assets/mundo.png'
 
 import { data } from '../../data.json'
+import managementData from '../DataManagement/DataManagement'
 
 const CardsInformations = () => {
-  const itemsList = [...data]
+  const endomarketingData = [...data]
+  const managementDataList = managementData[0].boards
 
-  console.log(itemsList[1])
+  console.log(managementDataList[0].resume_files)
+
   return (
     <div className={styles.container}>
       <div className={styles.gridCardItems}>
@@ -26,7 +29,7 @@ const CardsInformations = () => {
 
           <ul className={styles.list}>
             {
-              itemsList.map( items => (
+              endomarketingData.map( items => (
                 <li key={items.id} className={styles.listCard}>
 
                   <div className={styles.imageCard}>
@@ -76,30 +79,37 @@ const CardsInformations = () => {
           <div className={styles.cardManagement}>
             <h2>Quadros de Gestão à Vista</h2>
             <ul>
-              <li className={styles.statement}>
-                <div className={styles.containerStatement}>
-                  <h4 className={styles.title}>demonstrativo</h4>
 
-                  <div className={styles.infoStatement}>
-                    
-                    <div className={styles.world}>
-                      <img src={mundo} alt="imagem mundo" />
+              {
+                managementDataList.map((item, index) => (
+                  <li key={index} className={styles.statement}>
+                    <div className={styles.containerStatement}>
+                      <h4 className={styles.title}>{item.title}</h4>
+
+                      <div className={styles.infoStatement}>
+
+                        <div className={styles.world}>
+                          <img src={mundo} alt="imagem mundo" />
+                        </div>
+
+                        <div className={styles.info}>
+                          <div></div>
+                          <div></div>
+                          <div></div>
+                        </div>
+                      </div>
                     </div>
-                    
 
-                    <div className={styles.info}>
-                      <div></div>
-                      <div></div>
-                      <div></div>
+                    <div className={styles.cardsInformationsImg}>
+                      <img src={item.resume_files[0].file} alt="" />
+                      <img src={item.resume_files[1].file} alt="" />
+                      <img src={item.resume_files[2].file} alt=""/>
+                      <img src={item.resume_files[3].file} alt="" />
                     </div>
-                  </div>
-                  
-                </div>
+                  </li>
+                ))
+              }
 
-
-                
-
-              </li>
             </ul>
           </div>
 

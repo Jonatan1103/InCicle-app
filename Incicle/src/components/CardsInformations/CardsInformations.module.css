@@ -8,6 +8,7 @@
 }
 
 .gridCardItems {
+  height:100vh;
   padding:0 80px;
   padding-bottom: 25px;
   display:grid;
@@ -151,7 +152,7 @@
 .cardEndomarketing {
   border: 1px solid #DCD1C0;
   width: 278px;
-  height: 268px;
+  height: 248px;
   padding:30px 21px;
   background-color:#FFF2DE;
   margin-bottom:17.5px;
@@ -166,7 +167,7 @@
 
 .cardItemSecundary button {
   color:#707070;
-  margin-top:58px;
+  margin-top:38px;
   font-weight:700;
   font-size:13px;
   padding:10px 20px;
@@ -202,6 +203,8 @@
 
 .statement {
   background: rgba(52, 137, 177, 0.1);
+  margin-top:11.5px;
+  padding:3.8px;
 }
 
 .statement .title {
@@ -252,4 +255,15 @@
   height: 3px;
   border-radius:50%;
   background: #707070;
+}
+
+.cardsInformationsImg {
+  display:flex;
+  justify-content:space-between;
+  margin-top:3px;
+}
+
+.cardsInformationsImg img {
+  width:60px;
+  height:60px;
 }
