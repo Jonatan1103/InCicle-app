@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 import styles from './CardsInformations.module.css'
 
 import poligono from '../../../assets/Polígono.png' 
@@ -5,11 +7,10 @@ import mundo from '../../../assets/mundo.png'
 
 import { data } from '../../data.json'
 import managementData from '../DataManagement/DataManagement'
-import { useState } from 'react'
 
 const CardsInformations = () => {
   const [listItem, setListItem] = useState(data)
-  
+
   const endomarketingData = [...listItem]
   const managementDataList = managementData[0].boards
 
