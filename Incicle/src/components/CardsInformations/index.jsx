@@ -9,6 +9,7 @@ import { useState } from 'react'
 
 const CardsInformations = () => {
   const [listItem, setListItem] = useState(data)
+  
   const endomarketingData = [...listItem]
   const managementDataList = managementData[0].boards
 
