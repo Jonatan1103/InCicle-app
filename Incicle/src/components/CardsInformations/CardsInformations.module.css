@@ -236,6 +236,7 @@ body {
   justify-content:center;
   align-items:center;
   background-color:#fff;
+  cursor:pointer;
 }
 
 .world img {
@@ -251,6 +252,7 @@ body {
   align-items:center;
   background-color:#fff;
   border-radius:50%;
+  cursor:pointer;
 }
 
 .info div {
@@ -295,8 +297,7 @@ body {
   }
 }
 
-
-@media (max-width:750px) {
+@media (max-width:715px) {
   * {
     flex-wrap: wrap;
   }
@@ -323,9 +324,13 @@ body {
     height: 18%;
   }
 
-  .imageCard img {
-    display:none;
+  .imageCard {
+    display:flex;
+    flex-direction:column-reverse;
   }
+  /* .imageCard img {
+    display:none;
+  } */
 
   section {
     display:flex;

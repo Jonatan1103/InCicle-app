@@ -1,17 +1,22 @@
 import styles from './CardsInformations.module.css'
 
 import poligono from '../../../assets/Polígono.png' 
-import elipse from '../../../assets/Elipse.png'
 import mundo from '../../../assets/mundo.png'
 
 import { data } from '../../data.json'
 import managementData from '../DataManagement/DataManagement'
+import { useState } from 'react'
 
 const CardsInformations = () => {
-  const endomarketingData = [...data]
+  const [listItem, setListItem] = useState(data)
+  const endomarketingData = [...listItem]
   const managementDataList = managementData[0].boards
 
-  console.log(managementDataList[0].resume_files)
+  const HandleRemove = (id) => {
+    const filterRemoveItem = endomarketingData.filter(item => item.id !== id)
+
+    setListItem(filterRemoveItem)
+  }
 
   return (
     <div className={styles.container}>
@@ -29,7 +34,7 @@ const CardsInformations = () => {
 
           <ul className={styles.list}>
             {
-              endomarketingData.map( items => (
+              endomarketingData.map(items => (
                 <li key={items.id} className={styles.listCard}>
 
                   <div className={styles.imageCard}>
@@ -47,7 +52,9 @@ const CardsInformations = () => {
                     </div>
                   </div>
 
-                  <div className={styles.info}>
+                  <div 
+                    onClick={()=> HandleRemove(items.id)}
+                    className={styles.info}>
                     <div></div>
                     <div></div>
                     <div></div>
